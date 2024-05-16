@@ -12,7 +12,13 @@ export default function useSignup() {
 		navigate("/");
 	}
 
+	function onSelectCountry(val: string)  {
+		form.setFieldValue("country", val)
+	}
+
+	const selectedCountry = form.getFieldValue("country")
+
 	const isValid = SIGNUP_SCHEMA.safeParse(form.getFieldsValue()).success;
 
-	return { form, goToLogin, isValid };
+	return { form, goToLogin, isValid , onSelectCountry, selectedCountry};
 }
