@@ -1,7 +1,6 @@
-import { Form } from 'antd';
+import { Form, Select } from 'antd';
 import { Button } from 'forms/Button';
 import { Input } from 'forms/Input';
-import Select from 'forms/Select';
 
 import ArrowRight from '@icons/chevron-right.svg?react';
 import Logo from '@icons/franchain-logo.svg';
@@ -32,12 +31,21 @@ export default function Signup() {
 						<Input label="First name" name="firstName" />
 						<Input label="Last name" name="lastName" />
 					</div>
-					<Select label="Business name and HQ location" name="businessName">
-						{COUNTRIES.map((country) => (
-							<option value={country.value}>{country.label}</option>
-						))}
-					</Select>
 
+					<Input
+						label="Business name and HQ location"
+						name="businessName"
+						inputClassName="p-0 country-select"
+						inputProps={{
+							addonAfter: (
+								<Select>
+									{COUNTRIES.map((country) => (
+										<Select.Option value={country.value}>{country.label}</Select.Option>
+									))}
+								</Select>
+							),
+						}}
+					/>
 					<Input label="Work email" name="email" inputProps={{ type: "email" }} rules={[{ type: "email", message: "Please enter a valid email" }]} />
 					<Input
 						label="Password"

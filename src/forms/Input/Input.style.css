@@ -6,3 +6,13 @@
 
 	}
 }
+
+.country-select {
+   .ant-input-wrapper {
+    @apply h-full
+    }
+
+    .ant-input {
+        @apply h-full active:shadow-none focus:shadow-none
+    }
+}
