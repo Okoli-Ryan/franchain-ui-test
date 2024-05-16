@@ -1,0 +1,4 @@
+.bg-auth-background {
+    background: url(/src/assets/images/auth-background.svg) no-repeat 0 100%;
+    background-size: cover;
+}
