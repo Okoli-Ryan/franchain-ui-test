@@ -24,7 +24,7 @@ export default function Signup() {
 			</div>
 			<div className="pb-[82px] md:pb-[132px] md:px-[200px] lg:px-[60px] px-5">
 				<div className="mt-[21px]">
-					<h2 className="font-medium text-accent leading-[45.57px] text-[22px] md:text-[35px]">Get started with Franchain</h2>
+					<h2 className="font-medium text-accent leading-[45.57px] text-22 md:text-[35px]">Get started with Franchain</h2>
 					<div className="mt-1.5 md:mt-2.5 text-base md:text-xl">Create an account in 5 minutes.</div>
 				</div>
 				<Form layout="vertical" className="mt-6 md:mt-10" form={form} validateTrigger={["onChange", "onMount"]}>
@@ -32,12 +32,11 @@ export default function Signup() {
 						<Input label="First name" name="firstName" />
 						<Input label="Last name" name="lastName" />
 					</div>
-					<Select label="Where is your organisation based?" name="country">
+					<Select label="Business name and HQ location" name="businessName">
 						{COUNTRIES.map((country) => (
 							<option value={country.value}>{country.label}</option>
 						))}
 					</Select>
-					<Input label="Business name and HQ location" name="businessName" />
 
 					<Input label="Work email" name="email" inputProps={{ type: "email" }} rules={[{ type: "email", message: "Please enter a valid email" }]} />
 					<Input
@@ -57,7 +56,7 @@ export default function Signup() {
 						Sign up
 					</Button>
 				</Form>
-				<p className="mt-[30px] text-[10px] md:text-sm">
+				<p className="mt-[30px] text-10 md:text-sm">
 					By clicking “Start Application“, I agree to Mercury's{" "}
 					<a href="https://mercury.com/legal/terms" className="underline">
 						Terms of Use,

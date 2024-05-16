@@ -18,7 +18,7 @@ export default function AuthLayout() {
 						<h4 className="mt-[34px] text-center w-full font-medium leading-[52px] text-[40px]">
 							Royalty Collections, simplified. It's next level!
 						</h4>
-						<p className="mt-[13px] leading-[28.6px] text-[22px] text-center max-w-[420px]">
+						<p className="mt-[13px] leading-[28.6px] text-22 text-center max-w-[420px]">
 							Revenue based invoice collection to make royalty collection as easy as...
 						</p>
 					</div>

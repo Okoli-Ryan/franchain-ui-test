@@ -10,6 +10,10 @@ export default {
 				accent: "#282828",
 				primary: "#CED6F7",
 			},
+			fontSize: {
+				10: "0.625rem",
+				22: "1.375rem",
+			},
 		},
 	},
 	plugins: [],

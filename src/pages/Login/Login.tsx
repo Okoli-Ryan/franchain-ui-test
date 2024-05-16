@@ -22,7 +22,7 @@ export default function Login() {
 				</Button.Text>
 			</div>
 			<div className=" md:px-[200px] lg:px-[60px] px-5 flex justify-center flex-col h-full">
-				<h2 className="font-medium text-accent leading-[39px] text-[22px] md:text-[30px]">Login to Franchain</h2>
+				<h2 className="font-medium text-accent leading-[39px] text-22 md:text-[30px]">Login to Franchain</h2>
 				<Form layout="vertical" className="mt-6 md:mt-10">
 					<Input label="Email" name="email" inputProps={{ type: "email" }} />
 					<Input
