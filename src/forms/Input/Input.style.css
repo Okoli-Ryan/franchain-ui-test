@@ -3,5 +3,6 @@
 
 	& > label {
 		@apply text-accent text-xs md:text-base font-normal;
+
 	}
 }

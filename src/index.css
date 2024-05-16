@@ -23,3 +23,11 @@ input:-webkit-autofill:active{
 .ant-form-item {
     margin-bottom: 20px;
 }
+
+.ant-form-item-explain-error {
+    @apply mt-1.5 md:mt-2.5 text-xs md:text-base
+}
+
+.ant-form-item-required::before {
+    @apply !hidden
+}
