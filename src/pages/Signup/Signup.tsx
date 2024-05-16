@@ -50,7 +50,7 @@ export default function Signup() {
           </div>
 
           <div className="mb-2.5">
-            <label className="text-base">Business Name and HQ Location</label>
+            <label className="text-accent text-xs md:text-base font-normal;">Business Name and HQ Location</label>
             <div className="flex items-center mt-[10px]">
               <Input
                 name="businessName"
