@@ -13,7 +13,7 @@
     }
 
     .ant-input {
-        @apply h-full active:shadow-none focus:shadow-none border-light-2 !border-0 bg-transparent
+        @apply h-full active:shadow-none focus:shadow-none border-light-2 !border-0 bg-transparent  xl:text-base lg:text-sm
     }
 
     .ant-input-group-addon {
