@@ -8,6 +8,8 @@
 }
 
 html, body {
+    @apply text-[20.8px] md:text-base;
+    
     height: 100%;
     width: 100%;
     overflow-x: hidden;
