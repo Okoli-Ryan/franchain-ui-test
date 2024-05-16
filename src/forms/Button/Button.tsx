@@ -24,7 +24,7 @@ const ButtonText = ({ className, ...props }: IButton) => (
 		size="large"
 		type="primary"
 		className={twMerge(
-			"hover:!text-accent hover:!bg-transparent disabled:!border-none disabled:!bg-transparent *:hover:opacity-60 flex disabled:hover:!text-accent/60 gap-6 h-max bg-transparent items-center font-normal shadow-none outline-none text-accent p-0 rounded-none",
+			"hover:!text-accent hover:!bg-transparent disabled:!border-none disabled:!bg-transparent *:hover:opacity-60 flex disabled:hover:!text-accent/60 gap-4 h-max bg-transparent items-center font-normal shadow-none outline-none text-accent p-0 rounded-none",
 			className
 		)}
 		{...props}

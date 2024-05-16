@@ -8,7 +8,7 @@ import Logo from '@icons/franchain-logo.svg';
 import useSignup from './useSignup';
 
 export default function Signup() {
-	const { form } = useSignup();
+	const { form, goToLogin } = useSignup();
 
 	return (
 		<div>
@@ -16,7 +16,7 @@ export default function Signup() {
 				<div className="">
 					<img src={Logo} alt="logo" className="block lg:hidden h-[35px]" />
 				</div>
-				<Button.Text iconPosition="end" icon={<ArrowRight />}>
+				<Button.Text iconPosition="end" icon={<ArrowRight />} onClick={goToLogin}>
 					Log in
 				</Button.Text>
 			</div>
@@ -33,6 +33,7 @@ export default function Signup() {
 					<Input
 						label="Password"
 						name="password"
+						className="!mb-0"
 						inputProps={{ type: "password" }}
 						rules={[
 							{ min: 12, message: "Password must be at least 12 characters" },

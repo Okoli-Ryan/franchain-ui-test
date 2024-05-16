@@ -10,8 +10,10 @@ export default function AuthLayout() {
 		<div className="w-screen justify-center flex min-h-screen h-full">
 			<div className="w-full justify-center flex">
 				<div className="max-w-[1300px] w-full grid grid-cols-1 lg:grid-cols-2 z-10  relative">
-					<img src={Logo} alt="logo" className="absolute left-10 top-5 hidden md:block" />
-					<div className="lg:flex justify-center items-center flex-col h-full px-[60px] hidden">
+					<div className="h-[110px] flex items-center px-10 absolute">
+						<img src={Logo} alt="logo" className="left-10 top-5 hidden md:block" />
+					</div>
+					<div className="lg:flex justify-center items-center flex-col h-full px-[60px] hidden py-[290px]">
 						<img src={AuthImage} alt="auth-image" className="max-w-[427px] w-full h-auto" />
 						<h4 className="mt-[34px] text-center w-full font-medium leading-[52px] text-[40px]">
 							Royalty Collections, simplified. It's next level!
