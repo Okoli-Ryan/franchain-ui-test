@@ -96,7 +96,7 @@ export default function Signup() {
           <Button
             className="mt-3 md:mt-5"
             htmlType="submit"
-            // disabled={!isValid}
+            disabled={!isValid}
           >
             Sign up
           </Button>
