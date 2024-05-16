@@ -11,7 +11,7 @@ const Button = ({ className, icon, ...props }: IButton) => (
 		icon={icon}
 		type="primary"
 		className={twMerge(
-			"bg-primary hover:!bg-primary/80 disabled:bg-disabled text-xs md:text-[18px] px-6 md:px-10 py-[9px] md:py-[15px] h-max font-semibold active:bg-primary/80 *:text-white rounded-[36px] md:rounded-[60px]",
+			"bg-blue-500 hover:!bg-blue-500/80 disabled:!bg-primary outline-none border-none disabled:bg-disabled text-xs md:text-[18px] px-6 md:px-10 py-[9px] md:py-[15px] h-max font-semibold active:bg-blue-500/80 *:text-white rounded-[36px] md:rounded-[60px]",
 			icon ? "flex gap-2 items-center" : "",
 			className
 		)}

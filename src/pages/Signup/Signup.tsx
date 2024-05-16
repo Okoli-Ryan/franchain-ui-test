@@ -8,7 +8,7 @@ import Logo from '@icons/franchain-logo.svg';
 import useSignup from './useSignup';
 
 export default function Signup() {
-	const { form, goToLogin } = useSignup();
+	const { form, goToLogin, isValid } = useSignup();
 
 	return (
 		<div>
@@ -25,11 +25,13 @@ export default function Signup() {
 					<h2 className="font-medium text-accent leading-[45.57px] text-[22px] md:text-[35px]">Get started with Franchain</h2>
 					<div className="mt-1.5 md:mt-2.5 text-base md:text-xl">Create an account in 5 minutes.</div>
 				</div>
-				<Form layout="vertical" className="mt-6 md:mt-10" form={form}>
-					<Input label="First name" name="firstname" />
-					<Input label="Last name" name="lastname" />
+				<Form layout="vertical" className="mt-6 md:mt-10" form={form} validateTrigger={["onChange", "onMount"]}>
+					<div className="grid grid-cols-2 gap-4">
+						<Input label="First name" name="firstName" />
+						<Input label="Last name" name="lastName" />
+					</div>
 					<Input label="Business name and HQ location" name="businessName" />
-					<Input label="Work email" name="email" inputProps={{ type: "email" }} />
+					<Input label="Work email" name="email" inputProps={{ type: "email" }} rules={[{ type: "email", message: "Please enter a valid email" }]} />
 					<Input
 						label="Password"
 						name="password"
@@ -43,7 +45,7 @@ export default function Signup() {
 							},
 						]}
 					/>
-					<Button className="mt-3 md:mt-5" htmlType="submit">
+					<Button className="mt-3 md:mt-5" htmlType="submit" disabled={!isValid}>
 						Sign up
 					</Button>
 				</Form>
