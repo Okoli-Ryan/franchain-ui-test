@@ -1,35 +1,36 @@
 .ant-form-item .ant-form-item-label {
-	@apply pb-1.5 md:pb-2.5;
+  @apply pb-1.5 md:pb-2.5;
 
-	& > label {
-		@apply text-accent text-xs md:text-base font-normal;
-
-	}
+  & > label {
+    @apply text-accent text-xs md:text-base font-normal;
+  }
 }
 
 .country-select {
-   .ant-input-wrapper {
-    @apply h-full
+  @apply !h-[40.6px] md:!h-14;
+
+  .ant-input {
+    @apply h-full active:shadow-none focus:shadow-none border-light-2 !border-0 bg-transparent  xl:text-base lg:text-sm focus:!border-blue-500 active:!border-blue-500 focus-within:border-blue-500;
+  }
+
+  .ant-form-item-control-input {
+    @apply h-full;
+
+    & > * {
+      height: 100%;
     }
+  }
 
-    .ant-input {
-        @apply h-full active:shadow-none focus:shadow-none border-light-2 !border-0 bg-transparent  xl:text-base lg:text-sm
-    }
+  .ReactFlagsSelect-module_selectBtn__19wW7 {
+    @apply h-full border-l-0 rounded-r-md md:rounded-r-[10px] rounded-l-none bg-[#fdfdff];
+  }
 
-    .ant-input-group-addon {
-        @apply !p-0 !border-none;
+  .ReactFlagsSelect-module_selectOptions__3LNBJ {
+    min-width: 300px;
+    left: -200%;
+  }
 
-        & ul {
-            min-width: 300px;
-            left: -200%;
-        }
-
-        & > div {
-            @apply !p-0
-        }
-
-        & button {
-            @apply !h-full !border-0
-        }
-    }
+  .ReactFlagsSelect-module_label__27pw9 {
+    line-height: 1;
+  }
 }

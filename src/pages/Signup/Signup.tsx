@@ -49,26 +49,31 @@ export default function Signup() {
             <Input label="Last name" name="lastName" />
           </div>
 
-          <Input
-            label="Business name and HQ location"
-            name="businessName"
-            inputClassName="!p-0 country-select"
-            inputProps={{
-              addonAfter: (
-                <Form.Item name="country" className="!mb-0">
-                  <ReactFlagsSelect
-                    selected={selectedCountry}
-                    className="h-full !p-0"
-                    onSelect={onSelectCountry}
-                    showSecondarySelectedLabel={false}
-                    showOptionLabel={false}
-                    customLabels={COUNTRY_NAMES}
-                    countries={COUNTRY_VALUES}
-                  />
-                </Form.Item>
-              ),
-            }}
-          />
+          <div className="mb-2.5">
+            <label className="text-base">Business Name and HQ Location</label>
+            <div className="flex items-center mt-[10px]">
+              <Input
+                name="businessName"
+                inputClassName=" !rounded-r-none"
+                className="w-full !mb-0"
+              />
+              <Form.Item
+                name="country"
+                className="!mb-0 *:!h-full  country-select"
+              >
+                <ReactFlagsSelect
+                  selected={selectedCountry}
+                  className="h-full !p-0"
+                  onSelect={onSelectCountry}
+                  showSecondarySelectedLabel={false}
+                  showOptionLabel={false}
+                  customLabels={COUNTRY_NAMES}
+                  countries={COUNTRY_VALUES}
+                />
+              </Form.Item>
+            </div>
+          </div>
+
           <Input
             label="Work email"
             name="email"
@@ -91,7 +96,7 @@ export default function Signup() {
           <Button
             className="mt-3 md:mt-5"
             htmlType="submit"
-            disabled={!isValid}
+            // disabled={!isValid}
           >
             Sign up
           </Button>
