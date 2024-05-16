@@ -11,7 +11,7 @@ const Button = ({ className, icon, ...props }: IButton) => (
 		icon={icon}
 		type="primary"
 		className={twMerge(
-			"bg-primary hover:bg-primary/80 rounded-lg disabled:bg-disabled py-2.5 md:py-[18px] h-max font-semibold",
+			"bg-primary hover:!bg-primary/80 disabled:bg-disabled text-xs md:text-[18px] px-6 md:px-10 py-[9px] md:py-[15px] h-max font-semibold active:bg-primary/80 *:text-white rounded-[36px] md:rounded-[60px]",
 			icon ? "flex gap-2 items-center" : "",
 			className
 		)}
@@ -24,7 +24,7 @@ const ButtonText = ({ className, ...props }: IButton) => (
 		size="large"
 		type="primary"
 		className={twMerge(
-			"hover:!text-primary/60 hover:!bg-transparent disabled:!border-none disabled:!bg-transparent disabled:hover:!text-lightgray inline h-max bg-transparent items-center shadow-none outline-none text-primary p-0 font-semibold rounded-none",
+			"hover:!text-accent hover:!bg-transparent disabled:!border-none disabled:!bg-transparent *:hover:opacity-60 flex disabled:hover:!text-accent/60 gap-6 h-max bg-transparent items-center font-normal shadow-none outline-none text-accent p-0 rounded-none",
 			className
 		)}
 		{...props}

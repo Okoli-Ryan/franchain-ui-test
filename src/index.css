@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	font-family: "DM Sans", sans-serif;
+*{
+    font-family: "DM Sans";
+	@apply text-accent;
 }
 
 html, body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.ant-form-item {
+    margin-bottom: 20px;
 }

@@ -1,0 +1,7 @@
+.ant-form-item .ant-form-item-label {
+	@apply pb-1.5 md:pb-2.5;
+
+	& > label {
+		@apply text-accent text-xs md:text-base font-normal;
+	}
+}
