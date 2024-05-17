@@ -1,7 +1,9 @@
 import "./Home.styles.scss";
 
 import { Button } from "forms/Button";
+import { Link } from "react-router-dom";
 
+import AssistanceImage from "@icons/assistance-icon.svg";
 import SmilingManImage from "@images/smiling-guy-image.png";
 
 import Accordion from "./components/Accordion";
@@ -9,7 +11,7 @@ import { HOME_ACCORDION } from "./Home.data";
 
 export default function Home() {
 	return (
-		<div className="w-full px-[60px]">
+		<div className="w-full">
 			<div className="py-16 justify-between items-center flex">
 				<h1 className="font-medium text-40">Good morning, Jonathan</h1>
 				<Button>Create Collection</Button>
@@ -30,6 +32,28 @@ export default function Home() {
 				</div>
 				<div className="px-[10px] bg-white">
 					<Accordion items={HOME_ACCORDION} />
+				</div>
+				<div className="mt-[84px] flex flex-col gap-6 pb-12 w-full">
+					<h3 className="text-40 text-center font-medium">Need assistance?</h3>
+					<div className="grid grid-cols-3 justify-between gap-[30px]">
+						<div className="w-full py-10 flex justify-center flex-col border border-primary-2 rounded-[20px] items-center">
+							<img src={AssistanceImage} alt="assistance" className="w-[121px] h-[121px]" />
+							<h4 className="mt-4 text-dark font-medium">Inviting an operator</h4>
+						</div>
+
+						<div className="w-full py-10 flex justify-center flex-col border border-primary-2 rounded-[20px] items-center">
+							<img src={AssistanceImage} alt="assistance" className="w-[121px] h-[121px]" />
+							<h4 className="mt-4 text-dark font-medium">Assigning a location</h4>
+						</div>
+
+						<div className="w-full py-10 flex justify-center flex-col border border-primary-2 rounded-[20px] items-center">
+							<img src={AssistanceImage} alt="assistance" className="w-[121px] h-[121px]" />
+							<h4 className="mt-4 text-dark font-medium">Setting up auto withdrawals</h4>
+						</div>
+					</div>
+					<Link to="#" className="underline text-center">
+						Or visit our knowledge base
+					</Link>
 				</div>
 			</div>
 		</div>

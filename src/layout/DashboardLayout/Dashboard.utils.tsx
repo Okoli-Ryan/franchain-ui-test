@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { SideMenuItem } from "./DashboardLayout.data";
 
@@ -16,9 +16,9 @@ export function getItem(label: React.ReactNode, key?: string, icon?: React.React
 		icon,
 		children,
 		label: (
-			<Link to={`/${key}`} className="active">
+			<NavLink to={key === "/" ? "/" : `/${key}`} className={({ isActive }) => (isActive ? "active-link" : "")}>
 				{label}
-			</Link>
+			</NavLink>
 		),
 	} as SideMenuItem;
 }

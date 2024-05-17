@@ -22,7 +22,12 @@
 }
 
 .ant-menu {
-	&-submenu {
+    &-item {
+        @apply m-0 w-full #{!important}
+    }
+
+	&-submenu,
+	&-item {
 		@apply bg-dark;
 		@apply rounded-none #{!important};
 	}
@@ -30,4 +35,13 @@
 	&-title-content {
 		@apply text-white text-base;
 	}
+}
+
+.active-link {
+    @apply relative bg-[#343434];
+
+    &::before {
+        content: "";
+        @apply absolute top-0 left-0 w-[4px] h-full bg-primary-2 z-10;
+    }
 }
