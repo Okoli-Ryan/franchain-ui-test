@@ -23,15 +23,17 @@ export default function Home() {
 					</div>
 					<img src={SmilingManImage} className="object-contain" />
 				</div>
-				<div className="px-[60px] py-[36px] bg-white flex justify-between items-center relative z-10">
-					<h4 className="text-22">Let's get you up and running</h4>
-					<p className="text-sm">5/6 steps remaining</p>
-				</div>
-				<div className="bg-gray w-full relative z-40">
-					<div className="h-[17px] bg-primary-2 w-1/5"></div>
-				</div>
-				<div className="px-[10px] bg-white">
-					<Accordion items={HOME_ACCORDION} />
+				<div className="shadow-sm rounded-[10px] overflow-hidden">
+					<div className="px-[60px] py-[36px] bg-white flex justify-between items-center relative z-10">
+						<h4 className="text-22">Let's get you up and running</h4>
+						<p className="text-sm">5/6 steps remaining</p>
+					</div>
+					<div className="bg-gray w-full relative z-40">
+						<div className="h-[17px] bg-primary-2 w-1/5"></div>
+					</div>
+					<div className="px-[10px] bg-white">
+						<Accordion items={HOME_ACCORDION} />
+					</div>
 				</div>
 				<div className="mt-[84px] flex flex-col gap-6 pb-12 w-full">
 					<h3 className="text-40 text-center font-medium">Need assistance?</h3>
