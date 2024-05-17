@@ -1,0 +1,33 @@
+.ant-layout {
+	@apply bg-light;
+
+	.ant-layout-sider {
+		@apply bg-light;
+
+		&-children {
+			@apply flex flex-col bg-dark;
+		}
+
+		.ant-menu {
+			&-item {
+				@apply text-accent font-semibold;
+				// @apply hover:bg-secondary/50 hover:text-accent/50 #{!important};
+
+				&-selected {
+					// @apply bg-secondary text-primary;
+				}
+			}
+		}
+	}
+}
+
+.ant-menu {
+	&-submenu {
+		@apply bg-dark;
+		@apply rounded-none #{!important};
+	}
+
+	&-title-content {
+		@apply text-white text-base;
+	}
+}

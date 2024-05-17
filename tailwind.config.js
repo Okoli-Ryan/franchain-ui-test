@@ -8,6 +8,7 @@ export default {
 				"light-2": "#FDFDFF",
 				"light-blue": "#B1B7D6",
 				accent: "#282828",
+				dark: "#151515",
 				primary: "#CED6F7",
 			},
 			fontSize: {
