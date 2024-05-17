@@ -1,12 +1,11 @@
 import { Form } from "antd";
 import { Button } from "forms/Button";
 import { Input } from "forms/Input";
-import ReactFlagsSelect from "react-flags-select";
+import InputCountrySelect from "forms/InputCountrySelect";
 
 import ArrowRight from "@icons/chevron-right.svg?react";
 import Logo from "@icons/franchain-logo.svg";
 
-import { COUNTRY_NAMES, COUNTRY_VALUES } from "./Signup.utils";
 import useSignup from "./useSignup";
 
 export default function Signup() {
@@ -27,29 +26,13 @@ export default function Signup() {
 					<h2 className="font-bold text-accent leading-[45.57px] text-[30px] md:text-[35px]">Get started with Franchain</h2>
 					<div className="mt-1.5 md:mt-2.5 text-[20px] md:text-xl">Create an account in 5 minutes.</div>
 				</div>
-				<Form layout="vertical" className="mt-6 md:mt-10" form={form} validateTrigger={["onChange", "onMount"]} initialValues={{ country: "US" }}>
+				<Form layout="vertical" className="mt-6 md:mt-10" form={form} initialValues={{ country: "US" }}>
 					<div className="grid grid-cols-2 gap-4">
 						<Input label="First name" name="firstName" />
 						<Input label="Last name" name="lastName" />
 					</div>
 
-					<div className="mb-2.5">
-						<label className="text-accent text-[16px] md:text-base font-normal">Business Name and HQ Location</label>
-						<div className="flex items-center mt-[10px]">
-							<Input name="businessName" inputClassName=" !rounded-r-none" className="w-full !mb-0" />
-							<Form.Item name="country" className="!mb-0 *:!h-full  country-select">
-								<ReactFlagsSelect
-									selected={selectedCountry}
-									className="h-full !p-0"
-									onSelect={onSelectCountry}
-									showSecondarySelectedLabel={false}
-									showOptionLabel={false}
-									customLabels={COUNTRY_NAMES}
-									countries={COUNTRY_VALUES}
-								/>
-							</Form.Item>
-						</div>
-					</div>
+					<InputCountrySelect name="businessName" onSelectCountry={onSelectCountry} selectedCountry={selectedCountry} />
 
 					<Input label="Work email" name="email" inputProps={{ type: "email" }} rules={[{ type: "email", message: "Please enter a valid email" }]} />
 					<Input
