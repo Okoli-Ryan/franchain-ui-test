@@ -1,0 +1,5 @@
+.accordion-active {
+    & .accordion-index {
+        @apply bg-primary-2 *:text-white
+    }
+}
