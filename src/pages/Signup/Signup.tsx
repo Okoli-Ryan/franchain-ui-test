@@ -2,6 +2,7 @@ import { Form } from "antd";
 import { Button } from "forms/Button";
 import { Input } from "forms/Input";
 import InputCountrySelect from "forms/InputCountrySelect";
+import { Link } from "react-router-dom";
 
 import ArrowRight from "@icons/chevron-right.svg?react";
 import Logo from "@icons/franchain-logo.svg";
@@ -14,9 +15,9 @@ export default function Signup() {
 	return (
 		<div>
 			<div className="flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
-				<div className="">
+				<Link to="/">
 					<img src={Logo} alt="logo" className="block lg:hidden h-[35px]" />
-				</div>
+				</Link>
 				<Button.Text iconPosition="end" icon={<ArrowRight />} onClick={goToLogin}>
 					Log in
 				</Button.Text>
@@ -26,7 +27,7 @@ export default function Signup() {
 					<h2 className=" text-accent leading-[45.57px] header">Get started with Franchain</h2>
 					<div className="mt-1.5 md:mt-2.5 sub-header">Create an account in 5 minutes.</div>
 				</div>
-				<Form layout="vertical" className="mt-6 md:mt-10" form={form} initialValues={{ country: "US" }}>
+				<Form layout="vertical" className="mt-[24px] md:mt-[40px]" form={form} initialValues={{ country: "US" }}>
 					<div className="grid grid-cols-2 gap-4">
 						<Input label="First name" name="firstName" />
 						<Input label="Last name" name="lastName" />

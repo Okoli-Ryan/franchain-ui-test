@@ -14,16 +14,16 @@ export default function Login() {
 	return (
 		<div className="relative">
 			<div className="static md:absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
-				<div className="">
+				<Link to="/">
 					<img src={Logo} alt="logo" className="block lg:hidden h-[35px]" />
-				</div>
+				</Link>
 				<Button.Text iconPosition="end" icon={<ArrowRight />} onClick={goToCreateAccount}>
 					Create account
 				</Button.Text>
 			</div>
-			<div className="flex flex-col h-full mt-[40px] md:mt-0 justfy-start md:justify-center auth-page-padding">
+			<div className="flex flex-col h-max md:h-full mt-[40px] md:mt-0 justfy-start md:justify-center auth-page-padding">
 				<h2 className="text-accent leading-[39px] header">Login to Franchain</h2>
-				<Form layout="vertical" className="mt-6 md:mt-10" onFinish={goToEmailVerification}>
+				<Form layout="vertical" className="mt-[24px] md:mt-[40px]" onFinish={goToEmailVerification}>
 					<Input label="Email" name="email" inputProps={{ type: "email" }} />
 					<Input
 						label="Password"

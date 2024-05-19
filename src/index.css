@@ -27,7 +27,7 @@ input:-webkit-autofill:active{
 }
 
 .sub-header {
-    @apply text-[20px] md:text-xl
+    @apply text-[20px] md:text-xl leading-[28px]
 }
 
 .ant-form-item {

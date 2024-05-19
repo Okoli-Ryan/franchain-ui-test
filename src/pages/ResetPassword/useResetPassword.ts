@@ -7,5 +7,9 @@ export default function useResetPassword() {
 		navigate("/");
 	}
 
-	return { goToLogin };
+	function goToEmailVerification() {
+		navigate("/email-verify");
+	}
+
+	return { goToLogin, goToEmailVerification };
 }
