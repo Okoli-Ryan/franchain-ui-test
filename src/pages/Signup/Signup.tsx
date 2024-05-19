@@ -21,10 +21,10 @@ export default function Signup() {
 					Log in
 				</Button.Text>
 			</div>
-			<div className="pb-[82px] md:pb-[132px] md:px-[200px] lg:px-[60px] px-5">
+			<div className="pb-[82px] md:pb-[132px] auth-page-padding">
 				<div className="mt-[21px]">
-					<h2 className="font-bold text-accent leading-[45.57px] text-[30px] md:text-[35px]">Get started with Franchain</h2>
-					<div className="mt-1.5 md:mt-2.5 text-[20px] md:text-xl">Create an account in 5 minutes.</div>
+					<h2 className=" text-accent leading-[45.57px] header">Get started with Franchain</h2>
+					<div className="mt-1.5 md:mt-2.5 sub-header">Create an account in 5 minutes.</div>
 				</div>
 				<Form layout="vertical" className="mt-6 md:mt-10" form={form} initialValues={{ country: "US" }}>
 					<div className="grid grid-cols-2 gap-4">
@@ -48,7 +48,7 @@ export default function Signup() {
 							},
 						]}
 					/>
-					<Button className="mt-3 md:mt-5" htmlType="submit" disabled={!isValid}>
+					<Button className="mt-[18px] md:mt-[30px]" htmlType="submit" disabled={!isValid}>
 						Sign up
 					</Button>
 				</Form>

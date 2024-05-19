@@ -9,11 +9,11 @@ import Logo from '@icons/franchain-logo.svg';
 import useLogin from './useLogin';
 
 export default function Login() {
-	const { goToCreateAccount } = useLogin();
+	const { goToCreateAccount, goToEmailVerification } = useLogin();
 
 	return (
 		<div className="relative">
-			<div className="absolute top- 0 flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
+			<div className="absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
 				<div className="">
 					<img src={Logo} alt="logo" className="block lg:hidden h-[35px]" />
 				</div>
@@ -21,9 +21,9 @@ export default function Login() {
 					Create account
 				</Button.Text>
 			</div>
-			<div className=" md:px-[200px] lg:px-[60px] px-5 flex justify-center flex-col h-full">
-				<h2 className="font-medium text-accent leading-[39px] text-22 md:text-[30px]">Login to Franchain</h2>
-				<Form layout="vertical" className="mt-6 md:mt-10">
+			<div className="flex flex-col justify-center h-full auth-page-padding">
+				<h2 className="text-accent leading-[39px] header">Login to Franchain</h2>
+				<Form layout="vertical" className="mt-6 md:mt-10" onFinish={goToEmailVerification}>
 					<Input label="Email" name="email" inputProps={{ type: "email" }} />
 					<Input
 						label="Password"
@@ -38,13 +38,13 @@ export default function Login() {
 							},
 						]}
 					/>
-					<p className="mt-1.5 md:mt-2.5 text-[10px] md:text-base">
+					<p className="mt-1.5 md:mt-2.5 text-[16px]">
 						Forgot your password?{" "}
 						<Link to="/reset" className="underline">
 							click here to reset
 						</Link>
 					</p>
-					<Button className="mt-3 md:mt-5" htmlType="submit">
+					<Button className="mt-[18px] md:mt-[30px]" htmlType="submit">
 						Log in
 					</Button>
 				</Form>

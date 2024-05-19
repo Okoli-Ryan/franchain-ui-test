@@ -7,5 +7,9 @@ export default function useLogin() {
 		navigate("/signup");
 	}
 
-	return { goToCreateAccount };
+    function goToEmailVerification() {
+		navigate("/email-verify");
+	}
+
+	return { goToCreateAccount, goToEmailVerification };
 }

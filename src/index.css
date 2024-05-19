@@ -22,6 +22,14 @@ input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
+.header {
+    @apply text-[30px] md:text-[35px] font-bold
+}
+
+.sub-header {
+    @apply text-[20px] md:text-xl
+}
+
 .ant-form-item {
     margin-bottom: 20px;
 }
