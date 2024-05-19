@@ -12,7 +12,7 @@ export default function EmailVerification() {
 
 	return (
 		<div className="relative">
-			<div className="absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
+			<div className="static md:absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
 				<div className="">
 					<img src={Logo} alt="logo" className="block lg:hidden h-[35px]" />
 				</div>
@@ -20,7 +20,7 @@ export default function EmailVerification() {
 					Go back
 				</Button.Text>
 			</div>
-			<Form layout="vertical" className="flex flex-col justify-center h-full auth-page-padding">
+			<Form layout="vertical" className="flex flex-col mt-[40px] md:mt-0 justfy-start md:justify-center h-full auth-page-padding">
 				<div className="header">Check your email for a code</div>
 				<Input name="code" className="mt-[40px] !mb-0" label="Enter code" />
 				<Button className="mt-[18px] md:mt-[30px] w-max" onClick={goToResetPassword}>

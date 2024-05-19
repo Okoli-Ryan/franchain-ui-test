@@ -13,7 +13,7 @@ export default function Login() {
 
 	return (
 		<div className="relative">
-			<div className="absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
+			<div className="static md:absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
 				<div className="">
 					<img src={Logo} alt="logo" className="block lg:hidden h-[35px]" />
 				</div>
@@ -21,7 +21,7 @@ export default function Login() {
 					Create account
 				</Button.Text>
 			</div>
-			<div className="flex flex-col justify-center h-full auth-page-padding">
+			<div className="flex flex-col h-full mt-[40px] md:mt-0 justfy-start md:justify-center auth-page-padding">
 				<h2 className="text-accent leading-[39px] header">Login to Franchain</h2>
 				<Form layout="vertical" className="mt-6 md:mt-10" onFinish={goToEmailVerification}>
 					<Input label="Email" name="email" inputProps={{ type: "email" }} />
@@ -40,7 +40,7 @@ export default function Login() {
 					/>
 					<p className="mt-1.5 md:mt-2.5 text-[16px]">
 						Forgot your password?{" "}
-						<Link to="/reset" className="underline">
+						<Link to="/reset-password" className="underline">
 							click here to reset
 						</Link>
 					</p>

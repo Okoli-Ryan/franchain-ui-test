@@ -12,7 +12,7 @@ export default function ResetPassword() {
 
 	return (
 		<div className="relative">
-			<div className="absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
+			<div className="static md:absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
 				<div className="">
 					<img src={Logo} alt="logo" className="block lg:hidden h-[35px]" />
 				</div>
@@ -20,7 +20,7 @@ export default function ResetPassword() {
 					Return to login
 				</Button.Text>
 			</div>
-			<div className="flex flex-col justify-center h-full auth-page-padding">
+			<div className="flex flex-col mt-[40px] md:mt-0 justfy-start md:justify-center h-full auth-page-padding">
 				<h2 className="text-accent leading-[39px] header">Reset password</h2>
 				<h6 className="mt-1.5 md:mt-2.5 sub-header">Enter your email address to get instructions for resetting your password.</h6>
 
