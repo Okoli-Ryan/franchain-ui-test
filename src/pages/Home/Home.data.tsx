@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 export const HOME_ACCORDION: { header: ReactNode; content: ReactNode }[] = [
 	{
 		header: (
-			<div className="py-4 flex gap-5 items-center">
+			<div className="flex items-center gap-5 py-4">
 				<span className="h-10 w-10 rounded-full border-[.38px] border-solid border-black flex items-center justify-center accordion-index">
 					<span className="text-xl ">1</span>
 				</span>
@@ -15,7 +15,7 @@ export const HOME_ACCORDION: { header: ReactNode; content: ReactNode }[] = [
 	},
 	{
 		header: (
-			<div className="py-4 flex gap-5 items-center">
+			<div className="flex items-center gap-5 py-4">
 				<span className="h-10 w-10 rounded-full border-[.38px] border-solid border-black flex items-center justify-center accordion-index">
 					<span className="text-xl ">2</span>
 				</span>
@@ -26,7 +26,7 @@ export const HOME_ACCORDION: { header: ReactNode; content: ReactNode }[] = [
 	},
 	{
 		header: (
-			<div className="py-4 flex gap-5 items-center">
+			<div className="flex items-center gap-5 py-4">
 				<span className="h-10 w-10 rounded-full border-[.38px] border-solid border-black flex items-center justify-center accordion-index">
 					<span className="text-xl ">3</span>
 				</span>
@@ -37,7 +37,7 @@ export const HOME_ACCORDION: { header: ReactNode; content: ReactNode }[] = [
 	},
 	{
 		header: (
-			<div className="py-4 flex gap-5 items-center">
+			<div className="flex items-center gap-5 py-4">
 				<span className="h-10 w-10 rounded-full border-[.38px] border-solid border-black flex items-center justify-center accordion-index">
 					<span className="text-xl ">4</span>
 				</span>
@@ -48,7 +48,7 @@ export const HOME_ACCORDION: { header: ReactNode; content: ReactNode }[] = [
 	},
 	{
 		header: (
-			<div className="py-4 flex gap-5 items-center">
+			<div className="flex items-center gap-5 py-4">
 				<span className="h-10 w-10 rounded-full border-[.38px] border-solid border-black flex items-center justify-center accordion-index">
 					<span className="text-xl ">5</span>
 				</span>
@@ -59,7 +59,7 @@ export const HOME_ACCORDION: { header: ReactNode; content: ReactNode }[] = [
 	},
 	{
 		header: (
-			<div className="py-4 flex gap-5 items-center">
+			<div className="flex items-center gap-5 py-4">
 				<span className="h-10 w-10 rounded-full border-[.38px] border-solid border-black flex items-center justify-center accordion-index">
 					<span className="text-xl ">6</span>
 				</span>
@@ -73,7 +73,7 @@ export const HOME_ACCORDION: { header: ReactNode; content: ReactNode }[] = [
 function Content() {
 	return (
 		<div className="flex gap-16 px-9">
-			<div className="w-[370px] aspect-video bg-[#232323]"></div>
+			<div className="w-full max-w-[370px] aspect-video bg-accent-4"></div>
 			<div className="flex flex-col gap-[60px] ">
 				<p className="text-18 max-w-[500px]">
 					This is a sub header that will explain the basics of the video. We should thing about what we can write in this section as it will be

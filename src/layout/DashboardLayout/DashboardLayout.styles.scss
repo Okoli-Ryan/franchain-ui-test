@@ -38,7 +38,7 @@
 }
 
 .active-link {
-    @apply relative bg-[#343434];
+    @apply relative bg-accent-3;
 
     &::before {
         content: "";
