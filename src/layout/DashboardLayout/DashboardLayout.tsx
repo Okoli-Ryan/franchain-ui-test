@@ -18,7 +18,7 @@ export default function DashboardLayout() {
 
 	return (
 		<Layout className="min-h-[100dvh]">
-			<Sider trigger={null} collapsedWidth="0" collapsible breakpoint="md" width={280} className={twMerge(`bg-dark h-screen overflow-auto`)}>
+			<Sider trigger={null} collapsedWidth="0" collapsible breakpoint="md" width={280} className={twMerge(`bg-dark h-[100dvh] overflow-auto`)}>
 				<div className="py-[60px] w-full sticky top-0 z-[1000] flex justify-center">
 					<img src={SidebarLogo} alt="sidebar logo" className="w-[200px] h-auto cursor-pointer" />
 				</div>

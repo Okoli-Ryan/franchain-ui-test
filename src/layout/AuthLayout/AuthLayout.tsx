@@ -7,7 +7,7 @@ import AuthImage from '@images/auth-image.svg';
 
 export default function AuthLayout() {
 	return (
-		<div className="w-screen justify-center flex min-h-screen">
+		<div className="w-screen justify-center flex min-h-[100dvh]">
 			<div className="w-full justify-center flex">
 				<div className="max-w-[1300px] w-full grid grid-cols-1 lg:grid-cols-2 z-10  relative">
 					<div className="h-[110px] flex items-center px-10 absolute">
