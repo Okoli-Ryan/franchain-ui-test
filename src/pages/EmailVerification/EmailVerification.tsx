@@ -13,7 +13,7 @@ export default function EmailVerification() {
 
 	return (
 		<div className="relative">
-			<div className="static md:absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
+			<div className="static md:absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-[1.625rem]">
 				<Link to="/">
 					<img src={Logo} alt="logo" className="block lg:hidden h-[35px]" />
 				</Link>
@@ -28,10 +28,10 @@ export default function EmailVerification() {
 					<Button className="mt-[18px] md:mt-[30px] w-max" onClick={goToResetPassword}>
 						Continue
 					</Button>
-					<div className="mt-[30px] text-[16px] text-accent">
+					<div className="mt-[30px] text-base text-accent">
 						Didn't receive a code? Check your spam folder or{" "}
 						<Button.Text className="inline ">
-							<span className="font-normal underline text-accent text-[16px]">Click to resend</span>
+							<span className="font-normal underline text-accent text-base">Click to resend</span>
 						</Button.Text>
 					</div>
 				</Form>

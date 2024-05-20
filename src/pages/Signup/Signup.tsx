@@ -53,7 +53,7 @@ export default function Signup() {
 						Sign up
 					</Button>
 				</Form>
-				<p className="mt-[30px] text-10 md:text-sm">
+				<p className="mt-[30px] text-[.8125rem] md:text-sm">
 					By clicking “Start Application“, I agree to Mercury's{" "}
 					<a href="https://mercury.com/legal/terms" className="underline">
 						Terms of Use,

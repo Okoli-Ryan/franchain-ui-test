@@ -13,7 +13,7 @@ export default function Login() {
 
 	return (
 		<div className="relative">
-			<div className="static md:absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-5">
+			<div className="static md:absolute flex justify-between md:px-10 h-[61px] md:h-[110px] items-center w-full px-[1.625rem]">
 				<Link to="/">
 					<img src={Logo} alt="logo" className="block lg:hidden h-[35px]" />
 				</Link>
@@ -38,7 +38,7 @@ export default function Login() {
 							},
 						]}
 					/>
-					<p className="mt-1.5 md:mt-2.5 text-[16px]">
+					<p className="mt-1.5 md:mt-2.5 text-base">
 						Forgot your password?{" "}
 						<Link to="/reset-password" className="underline">
 							click here to reset

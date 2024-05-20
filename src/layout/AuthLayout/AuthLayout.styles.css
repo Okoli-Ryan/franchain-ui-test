@@ -4,5 +4,5 @@
 }
 
 .auth-page-padding {
-    @apply md:px-[200px] lg:px-[60px] px-5
+    @apply md:px-[200px] lg:px-[60px] px-[1.625rem]
 }
